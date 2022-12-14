@@ -1,0 +1,204 @@
+<!-- Copyright (c) Microsoft Corporation.
+Licensed under the MIT license. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <title>LeanKloud report</title>
+</head>
+<style>
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+</style>
+<body>
+    <header class="embed-container col-lg-12 col-md-12 col-sm-12 shadow">
+        <p>
+            LeanKloud
+        </p>
+    </header>
+    <!-- <main class="row"> -->
+        <!--<section id="text-container" class="embed-container col-lg-4 col-md-4 col-sm-4 mb-5 ml-5 mt-5">
+            <div>
+                <p>This sample is developed using NodeJS Framework.
+                    <br> In order to see a different report, make changes to the <i>config.json</i> file.
+                </p>
+                <p>Code is present in the following files:
+                    <ol>
+                        <li>embedConfigService.js</li>
+                        <li>authentication.js</li>
+                        <li>server.js</li>
+                        <li>index.js</li>
+                        <li>utils.js</li>
+                        <li>index.html</li>
+                        <li>index.css</li>
+                    </ol>
+                </p>
+            </div>
+        </section>-->
+		
+		<div class="panelnew panelnew-default panel-body"style="background-color:#f2f7fb;">
+			<div class="col-md-12" > 
+			   		<!-- <img id="triangleup" src="../viwes/images/triangleup.png" class="imgsize"> -->
+						
+						<!-- <img id="triangledown" src="images/triangledown.png" class="imgsize"> -->
+			  <div style="padding-left:20px;font-family: Roboto">
+			     <span id="triangleupAZ-DB-001" onclick="myFunction('AZ-DB-001')"><i class="arrow down"></i></span>
+				 <span id="triangledownAZ-DB-001" onclick="myFunction1('AZ-DB-001')"><i class="arrow up"></i></span>
+				 <span style="margin-left: 5px;">Application Name:</span> 
+				 <span >AZ-DB-001</span>
+			   </div>
+			   <div id="AZ-DB-001">
+					 <section id="report-containerAZ-DB-001" style="height: 250px !important;" class="embed-container col-lg-offset-4 col-lg-7 col-md-offset-5 col-md-7 col-sm-offset-5 col-sm-7 mt-5"> 
+						
+					</section>
+					<div id="App_NameAZ-DB-001" style="padding-left:20px;font-family: Roboto"> 
+						 <input type="radio" id="AcceptedAZ-DB-001" name="optradio" value="Accept">
+						 <label for="html">Accept</label><br>
+						 <input type="radio" id="RejectedAZ-DB-001" name="optradio" value="Reject">
+						 <label for="css">Reject</label><br>
+						 <Input type="submit" Onclick=Submit('AZ-DB-001') value="Submit">
+				   </div>
+				   <div id="AcceptAZ-DB-001" style="Display:None"> 
+						Application Name Accepted
+				   </div>
+				   <div id="RejectAZ-DB-001" style="Display:None"> 
+						Application Name Rejected
+				   </div>
+			   </div>	
+			</div>
+			
+			<div class="col-md-12" > 
+			   		
+			  <div style="padding-left:20px;font-family: Roboto">
+			     <span id="triangleupAZ-Prod-01" onclick="myFunction('AZ-Prod-01')"><i class="arrow down"></i></span>
+				 <span id="triangledownAZ-Prod-01" onclick="myFunction1('AZ-Prod-01')"><i class="arrow up"></i></span>
+				 <span style="margin-left: 5px;">Application Name:</span> 
+				 <span >AZ-Prod-01</span>
+			   </div>
+			   <div id="AZ-Prod-01">
+					 <section id="report-containerAZ-Prod-01" style="height: 250px !important;" class="report-container embed-container col-lg-offset-4 col-lg-7 col-md-offset-5 col-md-7 col-sm-offset-5 col-sm-7 mt-5"> 
+						
+					</section>
+					<div id="App_NameAZ-Prod-01" style="padding-left:20px;font-family: Roboto"> 
+						 <input type="radio" id="AcceptedAZ-Prod-01" name="optradio" value="Accept">
+						 <label for="html">Accept</label><br>
+						 <input type="radio" id="RejectedAZ-Prod-01" name="optradio" value="Reject">
+						 <label for="css">Reject</label><br>
+						 <Input type="submit" Onclick=Submit('AZ-Prod-01') value="Submit">
+				   </div>
+				   <div id="AcceptAZ-Prod-01" style="Display:None"> 
+						Application Name Accepted
+				   </div>
+				   <div id="RejectAZ-Prod-01" style="Display:None"> 
+						Application Name Rejected
+				   </div>
+			   </div>	
+			</div>
+			
+			<div class="col-md-12" > 
+			   		
+			  <div style="padding-left:20px;font-family: Roboto">
+			     <span id="triangleupAZ-Prod-02" onclick="myFunction('AZ-Prod-02')"><i class="arrow down"></i></span>
+				 <span id="triangledownAZ-Prod-02" onclick="myFunction1('AZ-Prod-02')"><i class="arrow up"></i></span>
+				 <span style="margin-left: 5px;">Application Name:</span> 
+				 <span >AZ-Prod-02</span>
+			   </div>
+			   <div id="AZ-Prod-02">
+					 <section id="report-containerAZ-Prod-02" style="height: 250px !important;" class="report-container embed-container col-lg-offset-4 col-lg-7 col-md-offset-5 col-md-7 col-sm-offset-5 col-sm-7 mt-5"> 
+						
+					</section>
+					<div id="App_NameAZ-Prod-02" style="padding-left:20px;font-family: Roboto"> 
+						 <input type="radio" id="AcceptedAZ-Prod-02" name="optradio" value="Accept">
+						 <label for="html">Accept</label><br>
+						 <input type="radio" id="RejectedAZ-Prod-02" name="optradio" value="Reject">
+						 <label for="css">Reject</label><br>
+						 <Input type="submit" Onclick=Submit('AZ-Prod-02') value="Submit">
+				   </div>
+				   <div id="AcceptAZ-Prod-02" style="Display:None"> 
+						Application Name Accepted
+				   </div>
+				   <div id="RejectAZ-Prod-02" style="Display:None"> 
+						Application Name Rejected
+				   </div>
+			   </div>	
+			</div>
+			
+			<div class="col-md-12" > 
+			   		
+			  <div style="padding-left:20px;font-family: Roboto">
+			     <span id="triangleupAZ-Prod-03" onclick="myFunction('AZ-Prod-03')"><i class="arrow down"></i></span>
+				 <span id="triangledownAZ-Prod-03" onclick="myFunction1('AZ-Prod-03')"><i class="arrow up"></i></span>
+				 <span style="margin-left: 5px;">Application Name:</span> 
+				 <span >AZ-Prod-03</span>
+			   </div>
+			   <div id="AZ-Prod-03">
+					 <section id="report-containerAZ-Prod-03" style="height: 250px !important;" class="report-container embed-container col-lg-offset-4 col-lg-7 col-md-offset-5 col-md-7 col-sm-offset-5 col-sm-7 mt-5"> 
+						
+					</section>
+					<div id="App_NameAZ-Prod-03" style="padding-left:20px;font-family: Roboto"> 
+						 <input type="radio" id="AcceptedAZ-Prod-03" name="optradio" value="Accept">
+						 <label for="html">Accept</label><br>
+						 <input type="radio" id="RejectedAZ-Prod-03" name="optradio" value="Reject">
+						 <label for="css">Reject</label><br>
+						 <Input type="submit" Onclick=Submit('AZ-Prod-03') value="Submit">
+				   </div>
+				   <div id="AcceptAZ-Prod-03" style="Display:None"> 
+						Application Name Accepted
+				   </div>
+				   <div id="RejectAZ-Prod-03" style="Display:None"> 
+						Application Name Rejected
+				   </div>
+			   </div>	
+			</div>
+			
+					
+			
+			
+		</div>
+		
+	
+        <!-- <section id="report-container" class="embed-container col-lg-offset-4 col-lg-7 col-md-offset-5 col-md-7 col-sm-offset-5 col-sm-7 mt-5"> -->
+        <!-- </section> -->
+
+        <!-- Used to display report embed error messages -->
+        <section class="error-container m-5">
+        </section>
+    <!-- </main> -->
+    <footer class="embed-container col-lg-12 col-md-12 col-sm-12 mb-0 mt-4">
+        <!--<p class="text-center">
+            For Live demo and more code samples please visit <a href="https://aka.ms/pbijs">https://aka.ms/pbijs</a>
+            <br> For JavaScript API, please visit <a href="https://aka.ms/PowerBIjs">https://aka.ms/PowerBIjs</a>
+        </p>-->
+    </footer>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/powerbi.min.js"></script>
+    <script src="../public/js/index.js"></script>
+
+</body>
+
+</html>
